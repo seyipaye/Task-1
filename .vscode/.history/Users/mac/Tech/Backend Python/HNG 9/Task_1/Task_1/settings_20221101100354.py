@@ -120,7 +120,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-import django_on_heroku
 django_on_heroku.settings(locals())
 
 # Default primary key field type
