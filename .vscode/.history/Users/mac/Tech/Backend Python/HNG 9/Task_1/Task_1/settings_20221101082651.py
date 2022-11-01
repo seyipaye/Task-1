@@ -32,7 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
+heroku
 # Application definition
 
 INSTALLED_APPS = [

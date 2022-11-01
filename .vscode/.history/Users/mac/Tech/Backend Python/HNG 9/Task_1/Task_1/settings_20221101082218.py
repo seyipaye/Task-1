@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
-import os
 from pathlib import Path
 
 import django_on_heroku
@@ -30,7 +29,7 @@ SECRET_KEY = 'django-insecure-ixdv21bc%y1m7(ph2ue5b*kt7=^8xa!2gjwjwe&r2diq@9-rg@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -122,8 +121,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIR = (os.path.join(BASE_DIR, 'static'),)
-django_on_heroku.settings(locals())
+STATIC_FI
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
